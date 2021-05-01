@@ -22,21 +22,20 @@ header {
 }
 
 section {
-    top: 200px; /* 265px olmali */
-    position: relative;
-    margin: 0 77px 0 119px;
+    position: static;
+    margin: 200px 77px 0 119px;
     display: grid;
     grid-column-gap: 118px;
     grid-template-columns: auto auto;
 }
 
 .image {
-    height: 447.43px;
+    max-width: 539.22px;
 }
 
 .image img {
-    width: 539.22px;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .context {
@@ -87,12 +86,33 @@ footer {
     line-height: 17,07px;
     color: #BDBDBD;
     bottom: 24px;
-    left: 0;
     width: 100%;
 }
 
 @media only screen and (max-width: 1324px) {
     section {
+        margin: 109px 77px 0 77px;
         grid-template-columns: auto;
+    }
+
+    .context {
+        height: auto;
+        margin-top: 77.65px;
+        margin-bottom: 77.65px;
+    }
+
+    .context .title {
+        font-size: 48px;
+        line-height: 71.09px;
+    }
+
+    .context .text {
+        font-size: 18px;
+        line-height: 26.66px;
+    }
+
+    footer {
+        position: static;
+        margin-bottom: 24px;
     }
 }
